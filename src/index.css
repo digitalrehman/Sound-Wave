@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: rock;
+  src: url(./fonts/RockvilleSolid.otf);
+}
+@font-face {
+  font-family: now-ruguler;
+  src: url(./fonts/Now-Regular.otf);
+}
+@font-face {
+  font-family: now-light;
+  src: url(./fonts/Now-Light.otf);
+}
+
+ul li a.active {
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: snow;
+  transition: width 0.3s;
+}
+body {
+  background: #0f172a;
+  overflow-x: hidden;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30336b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #130f40;
+}
